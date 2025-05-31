@@ -1,0 +1,90 @@
+<!--
+
+        LIVE GROUP CHAT APP
+		
+I built this group chat app using html,tailwing CSS,and Firebae.
+while there were some unexpected challenges alonge the way,
+ it was a great learning experience with Firebae.
+I hope you enjoy the app and share it with your friends and colleagues.
+-->
+
+<body>
+  
+<div class="loader-container">
+<div class="loader"></div>
+</div>
+ 
+<iframe id="myiframe" src="https://livechatgroup007.vercel.app/"
+frameborder="0"><iframe>
+
+</body>
+body 
+    {
+      margin: 10;
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  height:100vh;
+	  background-color: #f0f0f0;
+}
+.loader-container {
+              wider:50px;
+			  height:50px;
+			  position:relative;
+			  animation:rotateLoader 1.5s liner
+infinity;
+ }
+ .loader {
+        width:100%;
+		height:100%;
+		position:absolutelute;
+		top:0;
+		left:0;
+		border-radius:50%;
+		overflow:hidden;
+ }
+ .loader::brfor, .loader::after{
+       center: '';
+	   position: absolute;
+	   width:100%;
+	   height:100%;
+	   border-radius:50%;
+	   border:5px solid transparent;
+	   border--top-color:#86b69;
+	   border-bottom-color:#e8f0a4;
+	   animation:pulesv 1.5s cubic-bezier(0.645, 0.045, 0.355, 1)
+	   infinity;
+ }
+ .loader::befor{
+  animation-delay: 0.5s; 
+ }
+ @keyframe rotateLoader { 
+ 100% {
+    transform:rotate(360deg);
+ }
+  }
+ @keyframe plus {
+ 0%, 100% {
+    transform:scale(0.8);
+	opacity:0.3;
+ }
+ 50% {
+ transform: scale(1);
+ opacity: 1;
+ }
+  }
+  iframe{
+  width:100%;
+  height:100vh;
+  display:none
+  }
+  .loaded {
+  display: block !important;
+  }
+	
+window.onload = function() {
+      setTimeout(function()}
+document.getElementById('my iframe').classList.add('loaded');
+    document.querySelector('.loader-container').style.display = 'none';
+	 },200);
+	};
